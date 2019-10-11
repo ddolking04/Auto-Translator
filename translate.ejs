@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto Translator: Result</title>
+    <!-- Google Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            background: url("../images/ramos.jpg");
+            background-size: cover;
+            color: #f7f0f0;
+        }
+        h1{
+            font-size: 50px;
+            font-family: 'Mansalva', cursive;
+        }
+        #eng {
+            /* display: inline-block; */
+            float: left;
+            width: 48.5%;
+            height: 80%;
+            padding: 10px 10px 10px 10px; 
+        }
+        #kor {
+            /* display: inline-block; */
+            float:right;
+            width: 48.5%;
+            height: 80%;
+            padding: 10px 10px 10px 10px; 
+        }
+        .eng_p {
+            text-align: justify;
+            font-size: 25px;
+            font-family: 'Pathway Gothic One', sans-serif;
+        }
+        #kor_p {
+            text-align: justify;
+            font-size: 25px;
+            font-family: 'Jua', sans-serif;
+        }
+        h1 {   
+            text-align: center
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/"><h1>Auto Translator</h1></a>
+    </div>
+    <div style="display: inline">
+        <div id="eng">
+            <p class="eng_p"><%= eng %></p>
+            <hr>
+            <a href="/download_eng">영문기사 다운로드</a>
+        </div>
+        <div id="kor">
+            <p id="kor_p"><%= kor %></p>
+            <hr>
+            <a href="/download_kor">번영된 기사 다운로드</a>
+        </div>    
+    </div>
+</body>
+</html>
